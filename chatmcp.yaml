@@ -1,0 +1,24 @@
+name: c-mcp
+description: date
+author: https://github.com/ZYK824/today-tool-mcp
+license: MIT
+tags:
+  - today-tool-mcp
+  - ZYK824
+
+params:
+  type: object
+  properties: {}
+
+local: |
+  python server.py
+
+config: |
+  {
+    "mcpServers": {
+      "today-tool-mcp": {
+        "command": "python",
+        "args": ["server.py"]
+      }
+    }
+  }
